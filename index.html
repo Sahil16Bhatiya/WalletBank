@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - My first application interface</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <style type="text/css">
+    .topics img{
+      border-radius: 100px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+<nav class="header__nav nav-bar">
+    <div class="toggle-menu">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
+      <li class="nav-list-item"><a href="about.html" class="nav-link">About</a></li>
+    
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+ 
+ <div class="texth">
+   <h1>GO <br> CASHLESS!</h1>
+
+   <ul>
+     <li>ALL IN ONE APP</li>
+     <li>PAY FOR ALL DAILY NEEDS</li>
+     <li>APP IN YOUR LANGUAGE</li>
+   </ul>
+ </div>
+
+
+
+<div class="phone">
+  <div class="screen" id="content">
+    <div class="img"></div>
+    <div class="menu">
+      <h4 class="top">Clickable</h4>
+      
+    </div>
+    <div class="navbar">
+      <div class="trigger"><span>Rock'N'Roll</span></div>
+    </div>
+    <div class="content">
+      <div class="author">
+        <div class="on"></div>
+      </div>
+      <h1 class="name">Sahil Bhatiya<span>Account Balance  10,0392</span></h1>
+      
+       
+      
+      <div class="text">
+        <h3>Wallet Bank</h3>
+      </div>
+     
+
+      <div class="topics" id="sortable">
+        <div class="on ui-state-default"> 
+        <a href="p.html">  <img src="pic/w.png"></a>
+          
+        </div>
+        <div class="tw ui-state-default"  style="background-color: orange;"> 
+          <a href="b2.html"> <img src="pic/e.png"></a>
+          
+        </div>
+        <div class="thr ui-state-default"  style="background-color: orangered;"> 
+         <a href="b.html"> <img src="pic/g.png"></a>
+          
+        </div>
+
+        <div class="fo ui-state-default"  style="background-color: orangered;">
+         <a href="a.html"> <img src="pic/s.png"></a>
+      </div>
+      <div class="fo ui-state-default"  style="background-color: blueviolet;">
+         <a href="e.html"> <img src="pic/p.png"></a>
+      </div>
+      <div class="fo ui-state-default"  style="background-color: seagreen;">
+         <a href="c.html"> <img src="pic/c.png"></a>
+      </div>
+
+      <div class="fo ui-state-default"  style="background-color: darkgreen;">
+          <a href="ins.html"><img src="pic/i.png"></a>
+      </div>
+      <div class="fo ui-state-default"  style="background-color: purple;">
+        <a href="e.html">  <img src="pic/h.png"></a>
+      </div>
+      <div class="fo ui-state-default" style="background-color: silver;">
+        <a href="e.html">  <img src="pic/b.png"> </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="./script.js"></script>
+
+<script>
+  var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+  navBar.classList.toggle('toggle');
+});
+</script>
+</body>
+</html>
